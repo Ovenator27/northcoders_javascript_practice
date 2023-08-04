@@ -1,10 +1,12 @@
+//Determines if a number is prime
+
 function checkIsPrime(num) {
     //Check if num is 1, if true not prime
     if (num === 1){
         console.log(`The number ${num} is not prime`)
         return false
     }
-    //Create counter i where 1 < n < num
+    //Create counter i where 1 < i < num
     for (let i=2 ; i<num ; i++){
         //Check if remainder num/i = 0
         if (num % i === 0) {
