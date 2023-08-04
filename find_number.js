@@ -1,3 +1,5 @@
+//Takes string as input and checks if string contains a number
+
 function findTicketPrices(emailString) {
     const numbers = emailString.match(/\d+/);
     if (numbers === null) {

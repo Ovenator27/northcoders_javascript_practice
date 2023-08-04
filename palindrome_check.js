@@ -1,3 +1,5 @@
+//Takes string as input and checks if the string is a palindrome
+
 function isThisAPalindrome(str) {
     //Write string in reverse
     const reverse = str.split('').reverse().join('')
