@@ -1,13 +1,13 @@
+//Capitalises first letter of a string and greets
+
 function greetGuest(name) {
-    //Turn string into array
-    const nameStr = name.split('')
-    //Capitalise first entry in array
-    nameStr[0] = nameStr[0].toUpperCase()
-    //Convert array to string
-    name = nameStr.join('').toString();
-    //Return string
-    console.log(`Hello ${name}!`);
-    return `Hello ${name}!`;
+    //Capitalise first letter in string
+    const capName = name.charAt(0).toUpperCase() + name.slice(1);
+    //Print and return capitalised string
+    console.log(`Hello ${capName}!`)
+    return `Hello ${capName}!`
     }
 
-    greetGuest('');
+    const guest = 'jason';
+
+    greetGuest(guest);
