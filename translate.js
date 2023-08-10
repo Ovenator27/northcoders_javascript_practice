@@ -1,13 +1,11 @@
 function translateKey(student, keyToChange, translation) {
+    console.log(student);
     const newObj = {};
     for (let key in student) {
         newObj[key] = student[key]
     }
-    console.log(student);
-    console.log(newObj);
     newObj[translation] = newObj[keyToChange];
     delete newObj[keyToChange];
-    console.log(student);
     console.log(newObj);
     return newObj;
     }
